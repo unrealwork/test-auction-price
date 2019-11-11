@@ -1,3 +1,5 @@
+package com.axibase.auctioncalc;
+
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
