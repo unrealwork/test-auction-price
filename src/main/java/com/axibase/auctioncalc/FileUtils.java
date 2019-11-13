@@ -28,7 +28,7 @@ public class FileUtils {
 
     public static List<Book> readBooks(final Path path) {
         try (BufferedReader reader = Files.newBufferedReader(path)) {
-            List<String> logRecords = reader.lines()
+            List<String> logRecords = reader.lines().skip(2)
                     .map(String::trim)
                     .filter(s -> !s.isEmpty())
                     .collect(Collectors.toList());

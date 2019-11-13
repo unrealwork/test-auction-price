@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 import java.time.Instant;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Map;
 
@@ -33,7 +34,8 @@ public class Book {
         double[] bidPrices = this.getBids().stream().mapToDouble(Order::getPrice).toArray();
         double[] askPrices = this.getAsks().stream().mapToDouble(Order::getPrice).toArray();
         final StringBuilder builder = new StringBuilder();
-        builder.append(String.format("%s - %s%n", instant.toString(), secClass));
+        builder.append(String.format("%s - %s%n", 
+                instant.atZone(ZoneId.of("Europe/Moscow")).toLocalDateTime().toString(), secClass));
 
         builder.append(String.format("#%8s %9s %9s %9s %9s %9s%n",
                 "Total", "Size", "Bid", "Ask", "Size", "Total"));

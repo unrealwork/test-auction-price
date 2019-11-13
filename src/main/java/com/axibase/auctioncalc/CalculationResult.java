@@ -92,7 +92,10 @@ public class CalculationResult {
         }};
         builder.append(printResult(table));
         builder.append(String.format("%n"));
-        return builder.toString();
+        if (Math.abs(auctionPrice - serverAuctionPrice) < 10e-3) {
+            builder.append(String.format("Matched calculation!%n"));
+        }
+            return builder.toString();
     }
 
 
