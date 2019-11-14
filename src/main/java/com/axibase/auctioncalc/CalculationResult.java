@@ -7,8 +7,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
+import static java.util.Map.entry;
 
 @Data
 @Builder
@@ -46,56 +48,58 @@ public class CalculationResult {
                 "Field",
                 "SERVER",
                 "TOP-20"));
-        final LinkedHashMap<String, List<String>> table = new LinkedHashMap<>() {{
-            put("AuctionPrice,RUB", asList(
-                    String.format("%.2f", serverAuctionPrice),
-                    String.format("%.2f", auctionPrice))
-            );
-            put("AuctionVolume", asList(
-                    String.format("%d", total),
-                    String.format("%d", matchedVol))
-            );
-            put("LastPrice,RUB", asList(
-                    String.format("%.2f", lastPrice),
-                    String.format("%.2f", lastPrice))
-            );
-            
-            put("MarketBids", asList(
-                    String.format("%d", marketvolb),
-                    String.format("%d", marketvolb))
-            );
-            
-            put("MarketAsks", asList(
-                    String.format("%d", marketvols),
-                    String.format("%d", marketvols))
-            );
-            put("Imbalance,%", asList(
-                    "",
-                    String.format("%d", surplus))
-            );
-            put("MarketBids:%", asList(
-                    String.format("%.3f", perc(marketvolb, total)),
-                    String.format("%.3f", perc(marketvolb, matchedVol)))
-            );
-            put("MarketAsks:%", asList(
-                    String.format("%.3f", perc(marketvols, total)),
-                    String.format("%.3f", perc(marketvols, matchedVol)))
-            );
-            put("TotalValue:RUB", asList(
-                    String.format("%.3f", serverAuctValue),
-                    String.format("%.3f", matchedVol * qty * auctionPrice))
-            );
-            put("AuctionPriceDiff,%", asList(
-                    String.format("%.3f", ((serverAuctionPrice - lastPrice) / lastPrice) * 100),
-                    String.format("%.3f", ((auctionPrice - lastPrice) / lastPrice) * 100))
-            );
-        }};
+        final LinkedHashMap<String, List<String>> table = new LinkedHashMap<>();
+        Stream.of(
+                entry("AuctionPrice,RUB", asList(
+                        String.format("%.2f", serverAuctionPrice),
+                        String.format("%.2f", auctionPrice))
+                ),
+                entry("AuctionVolume", asList(
+                        String.format("%d", total),
+                        String.format("%d", matchedVol))
+                ),
+                entry("LastPrice,RUB", asList(
+                        String.format("%.2f", lastPrice),
+                        String.format("%.2f", lastPrice))
+                ),
+
+                entry("MarketBids", asList(
+                        String.format("%d", marketvolb),
+                        String.format("%d", marketvolb))
+                ),
+
+                entry("MarketAsks", asList(
+                        String.format("%d", marketvols),
+                        String.format("%d", marketvols))
+                ),
+                entry("Imbalance,%", asList(
+                        "",
+                        String.format("%d", surplus))
+                ),
+                entry("MarketBids:%", asList(
+                        String.format("%.3f", perc(marketvolb, total)),
+                        String.format("%.3f", perc(marketvolb, matchedVol)))
+                ),
+                entry("MarketAsks:%", asList(
+                        String.format("%.3f", perc(marketvols, total)),
+                        String.format("%.3f", perc(marketvols, matchedVol)))
+                ),
+                entry("TotalValue:RUB", asList(
+                        String.format("%.3f", serverAuctValue),
+                        String.format("%.3f", matchedVol * qty * auctionPrice))
+                ),
+                entry("AuctionPriceDiff,%", asList(
+                        String.format("%.3f", ((serverAuctionPrice - lastPrice) / lastPrice) * 100),
+                        String.format("%.3f", ((auctionPrice - lastPrice) / lastPrice) * 100))
+                )
+        ).forEach(e -> table.put(e.getKey(), e.getValue()));
+        
         builder.append(printResult(table));
         builder.append(String.format("%n"));
-        if (Math.abs(auctionPrice - serverAuctionPrice) < 10e-3) {
+        if (Math.abs(auctionPrice - serverAuctionPrice) < 10e-5) {
             builder.append(String.format("Matched calculation!%n"));
         }
-            return builder.toString();
+        return builder.toString();
     }
 
 

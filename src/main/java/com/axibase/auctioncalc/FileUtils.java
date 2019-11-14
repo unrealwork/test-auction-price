@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
@@ -16,7 +17,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @UtilityClass
@@ -34,27 +34,33 @@ public class FileUtils {
                     .collect(Collectors.toList());
             final List<Book> books = new ArrayList<>();
             for (int i = 0; i < logRecords.size(); i += 4) {
-                final String timeDesc = logRecords.get(i);
-                String[] parts = timeDesc.split(",INFO: ");
+                final Book b = parseBook(logRecords, i);
 
-                final String paramsString = logRecords.get(i + 3);
-                try {
-                    final Map<String, String> params = parseParams(paramsString);
-                    final Book b = new Book(parseDate(parts[0]),
-                            parts[1],
-                            parseOrders(logRecords.get(i + 1)),
-                            parseOrders(logRecords.get(i + 2)),
-                            params);
+                final LocalDateTime date = b.getInstant()
+                        .atZone(ZoneId.of("Europe/Moscow"))
+                        .toLocalDateTime();
+
+                if (date.getMinute() >= 40 && date.getMinute() < 50) {
                     books.add(b);
-                } catch (RuntimeException e) {
-                    throw e;
                 }
-                
             }
             return Collections.unmodifiableList(books);
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
+    }
+
+    private static Book parseBook(List<String> logRecords, int i) {
+        final String timeDesc = logRecords.get(i);
+        String[] parts = timeDesc.split(",INFO: ");
+
+        final String paramsString = logRecords.get(i + 3);
+        final Map<String, String> params = parseParams(paramsString);
+        return new Book(parseDate(parts[0]),
+                parts[1],
+                parseOrders(logRecords.get(i + 1)),
+                parseOrders(logRecords.get(i + 2)),
+                params);
     }
 
     public static void writeBooks(final List<Book> books, final Path path) {

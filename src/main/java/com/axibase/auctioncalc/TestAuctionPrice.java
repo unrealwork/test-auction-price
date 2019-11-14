@@ -1,7 +1,6 @@
 package com.axibase.auctioncalc;
 
 import java.nio.file.Path;
-import java.util.List;
 import java.util.Optional;
 
 public class TestAuctionPrice {
