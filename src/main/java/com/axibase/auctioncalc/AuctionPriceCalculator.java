@@ -10,11 +10,12 @@ public class AuctionPriceCalculator {
         final int qty = (int) Double.parseDouble(book.param("LOTSIZE"));
         final int marketvolb = (int) Double.parseDouble(book.param("marketvolb")) / qty;
         final int marketvols = (int) Double.parseDouble(book.param("marketvols")) / qty;
+        final int guaranteedAsks = Math.max(marketvolb, marketvols);
         long[] totalBids = BookUtils.totalBids(book.getBids(), marketvolb);
         long[] totalAsks = BookUtils.totalBids(book.getAsks(), marketvols);
         double[] bidPrices = book.getBids().stream().mapToDouble(Order::getPrice).toArray();
         double[] askPrices = book.getAsks().stream().mapToDouble(Order::getPrice).toArray();
-        
+
         List<CalculationResult> records = new ArrayList<>();
         for (int i = 0; i < bidPrices.length; i++) {
             int lastMatchedAskIndex = -1;

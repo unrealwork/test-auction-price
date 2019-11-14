@@ -1132,7 +1132,7 @@ Calculation info: Price      4.66; Imbalance: -2938; Total bids: 1353, Total ask
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                    -2938
+         Imbalance,%                                  -217.15
         MarketBids:%              100.000              94.826
         MarketAsks:%                1.169               1.109
       TotalValue:RUB          5966591.500         6306333.000
@@ -1168,7 +1168,7 @@ Calculation info: Price      4.66; Imbalance: -2837; Total bids: 1454, Total ask
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                    -2837
+         Imbalance,%                                  -195.12
         MarketBids:%               88.239              88.239
         MarketAsks:%                1.032               1.032
       TotalValue:RUB          6764008.000         6777094.000
@@ -1204,7 +1204,7 @@ Calculation info: Price      4.66; Imbalance: -2895; Total bids: 1454, Total ask
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                    -2895
+         Imbalance,%                                  -199.11
         MarketBids:%               88.179              88.239
         MarketAsks:%                1.031               1.032
       TotalValue:RUB          6764008.000         6775640.000
@@ -1240,7 +1240,7 @@ Calculation info: Price      4.66; Imbalance: -2384; Total bids: 1454, Total ask
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                    -2384
+         Imbalance,%                                  -163.96
         MarketBids:%               88.239              88.239
         MarketAsks:%                1.032               1.032
       TotalValue:RUB          6761827.000         6775640.000
@@ -1276,7 +1276,7 @@ Calculation info: Price      4.66; Imbalance: -2384; Total bids: 1454, Total ask
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                    -2384
+         Imbalance,%                                  -163.96
         MarketBids:%               88.239              88.239
         MarketAsks:%                1.032               1.032
       TotalValue:RUB          6761827.000         6775640.000
@@ -1312,7 +1312,7 @@ Calculation info: Price      4.65; Imbalance: -426; Total bids: 1677, Total asks
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                     -426
+         Imbalance,%                                   -25.40
         MarketBids:%               76.506              76.506
         MarketAsks:%                0.894               0.894
       TotalValue:RUB          7798050.000         7798050.000
@@ -1349,7 +1349,7 @@ Calculation info: Price      4.64; Imbalance: 547; Total bids: 1679, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      547
+         Imbalance,%                                    48.32
         MarketBids:%               76.506             113.339
         MarketAsks:%                0.894               1.325
       TotalValue:RUB          7798050.000         5255876.000
@@ -1385,7 +1385,7 @@ Calculation info: Price      4.64; Imbalance: 547; Total bids: 1679, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      547
+         Imbalance,%                                    48.32
         MarketBids:%               76.506             113.339
         MarketAsks:%                0.894               1.325
       TotalValue:RUB          7798050.000         5255876.000
@@ -1421,7 +1421,7 @@ Calculation info: Price      4.64; Imbalance: 547; Total bids: 1679, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      547
+         Imbalance,%                                    48.32
         MarketBids:%               76.506             113.339
         MarketAsks:%                0.894               1.325
       TotalValue:RUB          7798050.000         5255876.000
@@ -1457,7 +1457,7 @@ Calculation info: Price      4.64; Imbalance: 597; Total bids: 1729, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      597
+         Imbalance,%                                    52.74
         MarketBids:%               76.506             113.339
         MarketAsks:%                0.894               1.325
       TotalValue:RUB          7798050.000         5255876.000
@@ -1493,7 +1493,7 @@ Calculation info: Price      4.64; Imbalance: 597; Total bids: 1729, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      597
+         Imbalance,%                                    52.74
         MarketBids:%               74.291             113.339
         MarketAsks:%                0.869               1.325
       TotalValue:RUB          8030550.000         5255876.000
@@ -1529,7 +1529,7 @@ Calculation info: Price      4.64; Imbalance: 597; Total bids: 1729, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      597
+         Imbalance,%                                    52.74
         MarketBids:%               74.291             113.339
         MarketAsks:%                0.869               1.325
       TotalValue:RUB          8030550.000         5255876.000
@@ -1565,7 +1565,7 @@ Calculation info: Price      4.64; Imbalance: 597; Total bids: 1729, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 1283                1283
           MarketAsks                   15                  15
-         Imbalance,%                                      597
+         Imbalance,%                                    52.74
         MarketBids:%               74.291             113.339
         MarketAsks:%                0.869               1.325
       TotalValue:RUB          8030550.000         5255876.000
@@ -1601,7 +1601,7 @@ Calculation info: Price      4.65; Imbalance: 975; Total bids: 3414, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                      975
+         Imbalance,%                                    39.98
         MarketBids:%               87.173             121.771
         MarketAsks:%                0.440               0.615
       TotalValue:RUB         15866399.000        11341350.000
@@ -1637,7 +1637,7 @@ Calculation info: Price      4.66; Imbalance: -18; Total bids: 3357, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                      -18
+         Imbalance,%                                    -0.54
         MarketBids:%               87.173              88.472
         MarketAsks:%                0.440               0.447
       TotalValue:RUB         15866399.000        15633549.000
@@ -1674,7 +1674,7 @@ Calculation info: Price      4.66; Imbalance: -18; Total bids: 3357, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                      -18
+         Imbalance,%                                    -0.54
         MarketBids:%               85.863              88.472
         MarketAsks:%                0.434               0.447
       TotalValue:RUB         16108563.000        15633549.000
@@ -1711,7 +1711,7 @@ Calculation info: Price      4.66; Imbalance: -22; Total bids: 3357, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                      -22
+         Imbalance,%                                    -0.66
         MarketBids:%               85.863              88.472
         MarketAsks:%                0.434               0.447
       TotalValue:RUB         16108563.000        15630192.000
@@ -1747,7 +1747,7 @@ Calculation info: Price      4.74; Imbalance: 45; Total bids: 3459, Total asks: 
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                       45
+         Imbalance,%                                     1.32
         MarketBids:%               85.863              86.995
         MarketAsks:%                0.434               0.439
       TotalValue:RUB         16108563.000        16192602.000
@@ -1783,7 +1783,7 @@ Calculation info: Price      4.74; Imbalance: 45; Total bids: 3459, Total asks: 
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                       45
+         Imbalance,%                                     1.32
         MarketBids:%               85.863              86.995
         MarketAsks:%                0.434               0.439
       TotalValue:RUB         16108563.000        16192602.000
@@ -1819,7 +1819,7 @@ Calculation info: Price      4.66; Imbalance: -139; Total bids: 3459, Total asks
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                     -139
+         Imbalance,%                                    -4.02
         MarketBids:%               85.863              85.863
         MarketAsks:%                0.434               0.434
       TotalValue:RUB         16101645.000        16105104.000
@@ -1855,7 +1855,7 @@ Calculation info: Price      4.66; Imbalance: -139; Total bids: 3459, Total asks
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                     -139
+         Imbalance,%                                    -4.02
         MarketBids:%               85.863              85.863
         MarketAsks:%                0.434               0.434
       TotalValue:RUB         16101645.000        16105104.000
@@ -1891,7 +1891,7 @@ Calculation info: Price      4.66; Imbalance: -119; Total bids: 3461, Total asks
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2972                2972
           MarketAsks                   15                  15
-         Imbalance,%                                     -119
+         Imbalance,%                                    -3.44
         MarketBids:%               85.871              85.871
         MarketAsks:%                0.433               0.433
       TotalValue:RUB         16110955.000        16114416.000
@@ -1927,7 +1927,7 @@ Calculation info: Price      4.66; Imbalance: -121; Total bids: 3459, Total asks
        LastPrice,RUB                 4.65                4.65
           MarketBids                 2970                2970
           MarketAsks                   15                  15
-         Imbalance,%                                     -121
+         Imbalance,%                                    -3.50
         MarketBids:%               85.863              85.863
         MarketAsks:%                0.434               0.434
       TotalValue:RUB         16101645.000        16105104.000
@@ -1963,7 +1963,7 @@ Calculation info: Price      4.64; Imbalance: 841; Total bids: 3554, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      841
+         Imbalance,%                                    31.00
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12596459.000
@@ -1999,7 +1999,7 @@ Calculation info: Price      4.64; Imbalance: 849; Total bids: 3562, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      849
+         Imbalance,%                                    31.29
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2035,7 +2035,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2071,7 +2071,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2107,7 +2107,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2143,7 +2143,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2179,7 +2179,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2215,7 +2215,7 @@ Calculation info: Price      4.64; Imbalance: 902; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1571                1571
-         Imbalance,%                                      902
+         Imbalance,%                                    33.25
         MarketBids:%               86.036             112.643
         MarketAsks:%               44.229              57.906
       TotalValue:RUB         16516800.000        12599172.000
@@ -2251,7 +2251,7 @@ Calculation info: Price      4.64; Imbalance: 712; Total bids: 3625, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3066                3066
           MarketAsks                 1771                1771
-         Imbalance,%                                      712
+         Imbalance,%                                    24.44
         MarketBids:%               86.075             105.252
         MarketAsks:%               49.719              60.796
       TotalValue:RUB         16563300.000        13527972.000
@@ -2287,7 +2287,7 @@ Calculation info: Price      4.64; Imbalance: 702; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1771                1771
-         Imbalance,%                                      702
+         Imbalance,%                                    24.10
         MarketBids:%               86.036             104.909
         MarketAsks:%               49.859              60.796
       TotalValue:RUB         16516800.000        13527972.000
@@ -2323,7 +2323,7 @@ Calculation info: Price      4.64; Imbalance: 702; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1771                1771
-         Imbalance,%                                      702
+         Imbalance,%                                    24.10
         MarketBids:%               86.036             104.909
         MarketAsks:%               49.859              60.796
       TotalValue:RUB         16516800.000        13527972.000
@@ -2359,7 +2359,7 @@ Calculation info: Price      4.64; Imbalance: 245; Total bids: 3615, Total asks:
        LastPrice,RUB                 4.65                4.65
           MarketBids                 3056                3056
           MarketAsks                 1771                1771
-         Imbalance,%                                      245
+         Imbalance,%                                     7.27
         MarketBids:%               86.036              90.682
         MarketAsks:%               49.859              52.552
       TotalValue:RUB         16509696.000        15650280.000

@@ -74,7 +74,7 @@ public class CalculationResult {
                 ),
                 entry("Imbalance,%", asList(
                         "",
-                        String.format("%d", surplus))
+                        String.format("%.2f", (double) surplus / matchedVol * 100))
                 ),
                 entry("MarketBids:%", asList(
                         String.format("%.3f", perc(marketvolb, total)),
