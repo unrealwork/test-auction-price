@@ -27,10 +27,13 @@ public class Book {
     }
 
     public String getDescription() {
-        final int marketvolb = (int) Double.parseDouble(this.param("marketvolb")) / 10;
-        final int marketvols = (int) Double.parseDouble(this.param("marketvols")) / 10;
-        long[] totalBids = BookUtils.totalBids(this.getBids(), marketvolb);
-        long[] totalAsks = BookUtils.totalBids(this.getAsks(), marketvols);
+        final int qty = (int) Double.parseDouble(param("LOTSIZE"));
+        final int marketvolb = (int) Double.parseDouble(param("marketvolb")) / qty;
+        final int marketvols = (int) Double.parseDouble(param("marketvols")) / qty;
+        final int marketMax = Math.max(marketvolb, marketvols);
+        final int guaranteedAsks = marketMax;
+        long[] totalBids = BookUtils.totalBids(bids, marketMax);
+        long[] totalAsks = BookUtils.totalBids(asks, marketMax);
         double[] bidPrices = this.getBids().stream().mapToDouble(Order::getPrice).toArray();
         double[] askPrices = this.getAsks().stream().mapToDouble(Order::getPrice).toArray();
         final StringBuilder builder = new StringBuilder();
